@@ -22,6 +22,22 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <div class="box">
+        <div class="flex aligncenter space-between">
+              <a href="/" class="header-logo">
+            <img src="images/logos/3190343.jpg" alt="logo" width="60"></a>
+            <h2>Portfolio CV</h2>
+          <ul class="header-menu">
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/">A propos</a></li>
+            <li><a href="/">Competences</a></li>
+            <li><a href="/">Réalisations</a></li>
+            <li><a href="/">Contactez-moi</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <section id="flex-responsive">
       <div class="slider">
         <h1>Mon Portfolio</h1>
@@ -274,28 +290,28 @@
                 </div>
 
                 <div id="Accueil" class="tabcontent">
-                    <img src="images/photosEcole/Acc.PNG" alt="projet_Ecole"/>  
+                    <img src="images/photosEcole/Acc.PNG" alt="projet_Manager-OpenSim"/>  
                 </div>
                 <div id="Activites" class="tabcontent">
-                    <img src="images/photosEcole/About.PNG" alt="projet_Ecole"/>  
+                    <img src="images/photosEcole/About.PNG" alt="projet_Manager-OpenSim"/>  
                 </div>
                 <div id="Ateliers" class="tabcontent">
-                  <img src="images/photosEcole/Ateliers.PNG" alt="projet_Ecole"/>  
+                  <img src="images/photosEcole/Ateliers.PNG" alt="projet_Manager-OpenSim"/>  
                 </div>
                 <div id="Carte" class="tabcontent">
-                  <img src="images/photosEcole/Carte.PNG" alt="projet_Ecole"/> 
+                  <img src="images/photosEcole/Carte.PNG" alt="projet_Manager-OpenSim"/> 
                 </div>
                 <div id="EspaceUser" class="tabcontent">
-                  <img src="images/photosEcole/EspaceUser.PNG" alt="projet_Ecole" style="width: 500px;"/> 
+                  <img src="images/photosEcole/EspaceUser.PNG" alt="projet_Manager-OpenSim" style="width: 500px;"/> 
                 </div>
                 <div id="Form" class="tabcontent">
-                  <img src="images/photosEcole/Form.PNG" alt="projet_Ecole"/> 
+                  <img src="images/photosEcole/Form.PNG" alt="projet_Manager-OpenSim"/> 
                 </div>
                 <div id="TabProf" class="tabcontent">
-                  <img src="images/photosEcole/TabProf.PNG" alt="projet_Ecole" style="width: 700px;"/> 
+                  <img src="images/photosEcole/TabProf.PNG" alt="projet_Manager-OpenSim" style="width: 700px;"/> 
                 </div>
                 <div id="Contact" class="tabcontent">
-                  <img src="images/photosEcole/Contact.PNG" alt="projet_Ecole"/> 
+                  <img src="images/photosEcole/Contact.PNG" alt="projet_Manager-OpenSim"/> 
                 </div>
           </div>
 
@@ -321,14 +337,14 @@
                     <p>•  De simplifier le processus de la transmission de données statistiques à l’administration de
                     l’association qui les analyse et utilise pour la gestion utilisateurs.</p>
                     <p>En résumé : </p>
-                    <p>pour concevoir et développer une application en PHP avec Architecture MVC et
-                      des modèles de conception : Le Factory Pattern et La chaîne de responsabilité :
+                    <p>Pour concevoir et développer une application en PHP avec Architecture MVC et
+                      des modèles de conception : Le Factory Pattern et La chaîne de responsabilité,
                       j’ai travaillé en mode Agile (SCRUM) depuis l’analyse de l’expression des besoins clients jusqu’au
                       développement d’une solution logicielle de gestion des utilisateurs basée sur une architecture
                       N-Tiers, implémentée en langage PHP. Pour ce faire, je vais concevoir une base de données
                       relationnelle pour stocker les informations (utilisateurs, contenus spécifiques), et une API REST pour
                       la gestion.</p>
-                    <p>Pour développer la partie front-end et la partie back-end d’application, en intégrant les
+                    <p>Pour développer la partie Front-end et la partie Back-end d’application, en intégrant les
                         recommandations de sécurité, j’ai utilisé les langages : HTML, JS, PHP, CSS ainsi que
                         Framework Laravel 8 et Bootstrap 5, Base de données MySQL</p>
                   
@@ -339,57 +355,88 @@
               </div>
               <div class="carousele">
                 <div class="tab">
-                  <button
-                    class="tablinks" onclick="openCity(event, 'Accueil')">
-                    Page Accueil
+                  <button class="tablinks" onclick="openCity(event,'accueil')">
+                    Pages Accueil
                   </button>
-                  <button class="tablinks" onclick="openCity(event, 'Activites')">
-                    Page Nos Activités
+                  <button class="tablinks" onclick="openCity(event,'Articl')">
+                    Pages d'un Post
                   </button>
-                  <button class="tablinks" onclick="openCity(event, 'Ateliers')">
-                    Page Ateliers créatifs
+                  <button class="tablinks" onclick="openCity(event,'FormLog')">
+                    Page Formulaire de Login
                   </button>
-                   <button class="tablinks" onclick="openCity(event, 'Carte')">
-                    Page Carte d'atelier
+                  <button class="tablinks" onclick="openCity(event,'FormUser')">
+                    Page Formulaire d'Utilisateur
                   </button>
-                  <button class="tablinks" onclick="openCity(event, 'EspaceUser')">
+                   <button class="tablinks" onclick="openCity(event,'TabUsers')">
+                    Page Tableau de la gestion des utilisateurs
+                  </button>
+                  <button class="tablinks" onclick="openCity(event,'TabContact')">
                     Page Espace d'un Utilisateur
                   </button>
-                  <button class="tablinks" onclick="openCity(event, 'Form')">
-                    Page Formulaire d'ajouter un élève
+                  <button class="tablinks" onclick="openCity(event,'DiagrSeq')">
+                    Page UML Diagramme de séquences
                   </button>
-                  <button class="tablinks" onclick="openCity(event, 'TabProf')">
-                    Page Tableau de gestion des élèves
+                  <button class="tablinks" onclick="openCity(event,'BddPost')">
+                    Page Base de données.Table Post
                   </button>
-                  <button class="tablinks" onclick="openCity(event, 'Contact')">
-                    Page Contacter nous
+                  <button class="tablinks" onclick="openCity(event,'DiagrClass')">
+                    Page UML Diagramme de classes
                   </button>
+                  <button class="tablinks" onclick="openCity(event,'DiagrMpd')">
+                    Page UML Diagramme de MPD
+                  </button>
+                  <button class="tablinks" onclick="openCity(event,'DiagrPack')">
+                    Page UML Diagramme de Packages
+                  </button>
+                  <button class="tablinks" onclick="openCity(event,'responsifs')">
+                    Pages responsifs
+                  </button>
+                  <button class="tablinks" onclick="openCity(event,'contact')">
+                    Pages Contact
+                  </button>
+                  
                 </div>
-
-                <div id="Accueil" class="tabcontent">
-                    <img src="images/photosEcole/Acc.PNG" alt="projet_Ecole"/>  
+                <div id="accueil" class="tabcontent">
+                  <img src="images/photosMeza/Accueil.PNG" alt="projet_Manager-OpenSim"/> 
                 </div>
-                <div id="Activites" class="tabcontent">
-                    <img src="images/photosEcole/About.PNG" alt="projet_Ecole"/>  
+                <div id="Articl" class="tabcontent">
+                    <img src="images/photosMeza/Articl.PNG" alt="projet_Manager-OpenSim"/>  
                 </div>
-                <div id="Ateliers" class="tabcontent">
-                  <img src="images/photosEcole/Ateliers.PNG" alt="projet_Ecole"/>  
+                <div id="FormLog" class="tabcontent">
+                    <img src="images/photosMeza/FormLog.PNG" alt="projet_Manager-OpenSim"/>  
                 </div>
-                <div id="Carte" class="tabcontent">
-                  <img src="images/photosEcole/Carte.PNG" alt="projet_Ecole"/> 
+                <div id="FormUser" class="tabcontent">
+                  <img src="images/photosMeza/FormUser.PNG" alt="projet_Manager-OpenSim"/>  
                 </div>
-                <div id="EspaceUser" class="tabcontent">
-                  <img src="images/photosEcole/EspaceUser.PNG" alt="projet_Ecole" style="width: 500px;"/> 
+                <div id="TabUsers" class="tabcontent">
+                  <img src="images/photosMeza/TabUsers.PNG" alt="projet_Manager-OpenSim"/> 
                 </div>
-                <div id="Form" class="tabcontent">
-                  <img src="images/photosEcole/Form.PNG" alt="projet_Ecole"/> 
+                <div id="TabContact" class="tabcontent">
+                  <img src="images/photosMeza/GestionContact.PNG" alt="projet_Manager-OpenSim"/> 
                 </div>
-                <div id="TabProf" class="tabcontent">
-                  <img src="images/photosEcole/TabProf.PNG" alt="projet_Ecole" style="width: 700px;"/> 
+                <div id="DiagrSeq" class="tabcontent">
+                  <img src="images/photosMeza/Diagr.PNG" alt="projet_Manager-OpenSim"/> 
                 </div>
-                <div id="Contact" class="tabcontent">
-                  <img src="images/photosEcole/Contact.PNG" alt="projet_Ecole"/> 
+                <div id="BddPost" class="tabcontent">
+                  <img src="images/photosMeza/BddPost.PNG" alt="projet_Manager-OpenSim"/> 
                 </div>
+                <div id="DiagrClass" class="tabcontent">
+                  <img src="images/photosMeza/DiagrClass.PNG" alt="projet_Manager-OpenSim"/> 
+                </div>
+                <div id="DiagrMpd" class="tabcontent">
+                  <img src="images/photosMeza/DiagrMPD.PNG" alt="projet_Manager-OpenSim"/> 
+                </div>
+                <div id="DiagrPack" class="tabcontent">
+                  <img src="images/photosMeza/DiagrPack.PNG" alt="projet_Manager-OpenSim"/> 
+                </div>
+                <div id="responsifs" class="tabcontent">
+                  <img src="images/photosMeza/Responseve.PNG" alt="projet_Manager-OpenSim"/> 
+                </div>
+                <div id="contact" class="tabcontent">
+                  <img src="images/photosMeza/Contact.PNG" alt="projet_Manager-OpenSim"/> 
+                </div>
+                
+                
           </div>
 
               <!-- projet 3  -->
@@ -423,55 +470,55 @@
                 <div class="carousele">
                   <div class="tab">
                     <button
-                      class="tablinks" onclick="openCity(event, 'Accueil')">
+                      class="tablinks" onclick="openCity(event,'accueil')">
                       Page Accueil
                     </button>
-                    <button class="tablinks" onclick="openCity(event, 'Activites')">
+                    <button class="tablinks" onclick="openCity(event,'Activites')">
                       Page Nos Activités
                     </button>
-                    <button class="tablinks" onclick="openCity(event, 'Ateliers')">
+                    <button class="tablinks" onclick="openCity(event,'Ateliers')">
                       Page Ateliers créatifs
                     </button>
-                     <button class="tablinks" onclick="openCity(event, 'Carte')">
+                     <button class="tablinks" onclick="openCity(event,'Carte')">
                       Page Carte d'atelier
                     </button>
-                    <button class="tablinks" onclick="openCity(event, 'EspaceUser')">
+                    <button class="tablinks" onclick="openCity(event,'EspaceUser')">
                       Page Espace d'un Utilisateur
                     </button>
-                    <button class="tablinks" onclick="openCity(event, 'Form')">
+                    <button class="tablinks" onclick="openCity(event,'Form')">
                       Page Formulaire d'ajouter un élève
                     </button>
-                    <button class="tablinks" onclick="openCity(event, 'TabProf')">
+                    <button class="tablinks" onclick="openCity(event,'TabProf')">
                       Page Tableau de gestion des élèves
                     </button>
-                    <button class="tablinks" onclick="openCity(event, 'Contact')">
+                    <button class="tablinks" onclick="openCity(event,'Contact')">
                       Page Contacter nous
                     </button>
                   </div>
 
-                  <div id="Accueil" class="tabcontent">
-                      <img src="images/photosEcole/Acc.PNG" alt="projet_Ecole"/>  
+                  <div id="accueil" class="tabcontent">
+                      <img src="images/photosEcole/Acc.PNG" alt="projet_Manager-OpenSim"/>  
                   </div>
                   <div id="Activites" class="tabcontent">
-                      <img src="images/photosEcole/About.PNG" alt="projet_Ecole"/>  
+                      <img src="images/photosEcole/About.PNG" alt="projet_Manager-OpenSim"/>  
                   </div>
                   <div id="Ateliers" class="tabcontent">
-                    <img src="images/photosEcole/Ateliers.PNG" alt="projet_Ecole"/>  
+                    <img src="images/photosEcole/Ateliers.PNG" alt="projet_Manager-OpenSim"/>  
                   </div>
                   <div id="Carte" class="tabcontent">
-                    <img src="images/photosEcole/Carte.PNG" alt="projet_Ecole"/> 
+                    <img src="images/photosEcole/Carte.PNG" alt="projet_Manager-OpenSim"/> 
                   </div>
                   <div id="EspaceUser" class="tabcontent">
-                    <img src="images/photosEcole/EspaceUser.PNG" alt="projet_Ecole" style="width: 500px;"/> 
+                    <img src="images/photosEcole/EspaceUser.PNG" alt="projet_Manager-OpenSim" style="width: 500px;"/> 
                   </div>
                   <div id="Form" class="tabcontent">
-                    <img src="images/photosEcole/Form.PNG" alt="projet_Ecole"/> 
+                    <img src="images/photosEcole/Form.PNG" alt="projet_Manager-OpenSim"/> 
                   </div>
                   <div id="TabProf" class="tabcontent">
-                    <img src="images/photosEcole/TabProf.PNG" alt="projet_Ecole" style="width: 700px;"/> 
+                    <img src="images/photosEcole/TabProf.PNG" alt="projet_Manager-OpenSim" style="width: 700px;"/> 
                   </div>
                   <div id="Contact" class="tabcontent">
-                    <img src="images/photosEcole/Contact.PNG" alt="projet_Ecole"/> 
+                    <img src="images/photosEcole/Contact.PNG" alt="projet_Manager-OpenSim"/> 
                   </div>
             </div>
           </div>

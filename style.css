@@ -67,6 +67,10 @@ p {
   max-width: 1280px;
   margin-inline: auto;
 }
+/* pour ecarter 2 div */
+.space_between {
+  justify-content: space-between;
+}
 .texte h2 {
   width: 40%;
 }
@@ -94,6 +98,10 @@ p {
   margin-bottom: 20px;
   margin-right: 50px;
 }
+.aligncenter {
+  align-items: center;
+}
+
 .wrap {
   flex-wrap: wrap; /* pour bien ranger, si il y a beaucoup de images(projets)  */
 }
@@ -231,7 +239,7 @@ p {
   border: 1px solid #ccc;
   /*background-color: #f1f1f1;*/
   width: 30%;
-  height: 350px;
+  height: 510px;
   margin-bottom: 30px;
 }
 
@@ -265,17 +273,17 @@ p {
   padding: 0px;
   border: 1px solid #ccc;
   border-left: none;*/
-  width: 500px;
-  height: 350px;
+  width: 780px;
+  height: 510px;
   /* background-image: url("images/photosEcole/About.PNG");*/
   background-size: cover;
   display: none;
 }
 
 .tabcontent img {
-  /*object-fit: cover;
-  width: 500px;*/
-  height: 350px;
+  /*object-fit: cover;*/
+  width: 780px;
+  height: 510px;
   margin: 0%;
 }
 /* -----fin de caroussele------*/
@@ -313,6 +321,22 @@ p {
   border: 5px white;
   box-sizing: border-box;
   cursor: pointer;
+}
+/* ------- header --------------*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(57, 85, 133);
+  z-index: 999;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-block: 10px;
 }
 
 @media screen and (max-width: 500px) {

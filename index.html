@@ -25,8 +25,10 @@
     <header>
       <div class="box">
         <div class="flex aligncenter space-between">
+          
               <a href="/" class="header-logo">
             <img src="images/logos/3190343.jpg" alt="logo" width="60"></a>
+            
             <h2>Portfolio CV</h2>
           <ul class="header-menu">
             <li><a href="/">Accueil</a></li>
@@ -35,7 +37,14 @@
             <li><a href="/">Réalisations</a></li>
             <li><a href="/">Contactez-moi</a></li>
           </ul>
+          <button onclick="openMenu()" class="header-menu-mobil">
+            <!-- <span class="material-symbols-outlined"> -->
+            <span class="material-icons">
+              menu
+              </span>
+          </button>
         </div>
+        
       </div>
     </header>
     <section id="flex-responsive">
@@ -73,7 +82,7 @@
           <div class="compet">
             <h2>Mes competenses</h2>
             <div class="skills">
-              <div class="flex gap">
+              <div class="flex gap tocolumn">
                 <!-- slider back-end -->
                 <div class="typeskill">
                   <h3>Back-end :</h3>
@@ -147,7 +156,7 @@
         <div class="box">
           <div class="compet">
             <div class="skills">
-              <div class="flex gap">
+              <div class="flex gap tocolumn">
                 <!-- BDD -->
                 <div class="typeskill">
                   <h3>Base de données, Bibliotheques :</h3>
@@ -225,19 +234,19 @@
       <!-- mes realisations -->
       <div class="section">
         <div class="box">
-          <div class="compet">
+          <div class="compet tocolumn">
             <h2>Mes réalisations</h2>
-            <div class="realisation">
+            <div class="realisation wmob100 tocolumn">
               <!-- wrap gap20" -->
               <!-- projet 1  -->
-              <div class="inscription">
+              <div class="inscription tocolumn">
                 <a href="#"><h3>« Professors management »</h3></a>
                 <img
                   src="images/programming-background-collage.jpg"
                   alt="proget_Professors-management"
                 />
 
-                <div class="labelle">
+                <div class="labelle wmob100">
                   
                     <p>Pour la période de stage dans la Société Kebtechs, j'ai realisé le projet d’utilisation interne pour l’administrateur
                        : Tableau de la gestion des professeurs « Professors management » - une application de type Desktop.  
@@ -263,60 +272,61 @@
               <div class="carousele">
                 <div class="tab">
                   <button
-                    class="tablinks" onclick="openCity(event, 'Accueil')">
-                    Page Accueil
+                    class="tabgest" onclick="openCity(event,'TabGest')">
+                    Page Tableau de la gestion. Professor management
                   </button>
-                  <button class="tablinks" onclick="openCity(event, 'Activites')">
-                    Page Nos Activités
+                  <button class="detail" onclick="openCity(event,'Detail')">
+                    Page Details sur le Professor
                   </button>
-                  <button class="tablinks" onclick="openCity(event, 'Ateliers')">
-                    Page Ateliers créatifs
+                  <button class="modiffier" onclick="openCity(event,'Modif')">
+                    Page Mettre à jour un Professor
                   </button>
-                   <button class="tablinks" onclick="openCity(event, 'Carte')">
-                    Page Carte d'atelier
+                   <button class="enregist" onclick="openCity(event,'Enregist')">
+                    Page Enregistrer le Professor
                   </button>
-                  <button class="tablinks" onclick="openCity(event, 'EspaceUser')">
-                    Page Espace d'un Utilisateur
+                  <button class="diagrsec" onclick="openCity(event,'DiagrSec')">
+                    Page Diagramme de Secances. Gestion des Professors
                   </button>
-                  <button class="tablinks" onclick="openCity(event, 'Form')">
-                    Page Formulaire d'ajouter un élève
+                  <button class="classprof" onclick="openCity(event,'ClassProf')">
+                    Page Class Professor dans Sprint Boot
                   </button>
-                  <button class="tablinks" onclick="openCity(event, 'TabProf')">
-                    Page Tableau de gestion des élèves
+                  <button class="interface" onclick="openCity(event,'Interface')">
+                    Page Fichier d'interface
                   </button>
-                  <button class="tablinks" onclick="openCity(event, 'Contact')">
-                    Page Contacter nous
+                  <button class="postmantest" onclick="openCity(event,'PostmanTest')">
+                    Page Test requete HTTP: POST Professor. Outil Postman
                   </button>
                 </div>
 
-                <div id="Accueil" class="tabcontent">
-                    <img src="images/photosEcole/Acc.PNG" alt="projet_Manager-OpenSim"/>  
+                <div id="TabGest" class="tabcontent">
+                    <img src="images/photosProf/TabGest.PNG" alt="projet_Manager-OpenSim"/>  
                 </div>
-                <div id="Activites" class="tabcontent">
-                    <img src="images/photosEcole/About.PNG" alt="projet_Manager-OpenSim"/>  
+                <div id="Detail" class="tabcontent">
+                    <img src="images/photosProf/Detail.PNG" alt="projet_Manager-OpenSim"/>  
                 </div>
-                <div id="Ateliers" class="tabcontent">
-                  <img src="images/photosEcole/Ateliers.PNG" alt="projet_Manager-OpenSim"/>  
+                <div id="Modif" class="tabcontent">
+                  <img src="images/photosProf/Modif.PNG" alt="projet_Manager-OpenSim"/>  
                 </div>
-                <div id="Carte" class="tabcontent">
-                  <img src="images/photosEcole/Carte.PNG" alt="projet_Manager-OpenSim"/> 
+                <div id="Enregist" class="tabcontent">
+                  <img src="images/photosProf/Enregist.PNG" alt="projet_Manager-OpenSim"/> 
                 </div>
-                <div id="EspaceUser" class="tabcontent">
-                  <img src="images/photosEcole/EspaceUser.PNG" alt="projet_Manager-OpenSim" style="width: 500px;"/> 
+                <div id="DiagrSec" class="tabcontent">
+                  <img src="images/photosProf/Diagr.PNG" alt="projet_Manager-OpenSim" style="width: 500px;"/> 
                 </div>
-                <div id="Form" class="tabcontent">
-                  <img src="images/photosEcole/Form.PNG" alt="projet_Manager-OpenSim"/> 
+                <div id="ClassProf" class="tabcontent">
+                  <img src="images/photosProf/ClassProfBE.PNG" alt="projet_Manager-OpenSim"/> 
                 </div>
-                <div id="TabProf" class="tabcontent">
-                  <img src="images/photosEcole/TabProf.PNG" alt="projet_Manager-OpenSim" style="width: 700px;"/> 
+                <div id="Interface" class="tabcontent">
+                  <img src="images/photosProf/InterfaceBE.PNG" alt="projet_Manager-OpenSim" style="width: 700px;"/> 
                 </div>
-                <div id="Contact" class="tabcontent">
-                  <img src="images/photosEcole/Contact.PNG" alt="projet_Manager-OpenSim"/> 
+                <div id="PostmanTest" class="tabcontent">
+                  <img src="images/photosProf/PostmanTest.PNG" alt="projet_Manager-OpenSim"/> 
                 </div>
           </div>
 
               <!-- projet 2 -->
-              <div class="inscription">
+            <div class="projet">   
+              <div class="inscription tocolumn">
                 <a href="https://github.com/Webira/Blog_Laravel"
                   ><h3>« Manager open Simulateur »</h3></a
                 >
@@ -396,6 +406,7 @@
                   </button>
                   
                 </div>
+
                 <div id="accueil" class="tabcontent">
                   <img src="images/photosMeza/Accueil.PNG" alt="projet_Manager-OpenSim"/> 
                 </div>
@@ -436,11 +447,12 @@
                   <img src="images/photosMeza/Contact.PNG" alt="projet_Manager-OpenSim"/> 
                 </div>
                 
-                
+              </div>   
           </div>
 
               <!-- projet 3  -->
-              <div class="inscription">
+            <div class="projet">
+              <div class="inscription tocolumn">
                   <a href="#"><h3>« Plateforme d'inscription »</h3>
                   </a>
                 <img
@@ -524,40 +536,41 @@
           </div>
         </div>
       </div>
+    </div>
       <div class="section marget">
-        <!--  <div class="box">-->
-        <div class="compet">
-          <h2>Contactez-moi</h2>
-          <div class="contact">
-            <div class="iconcont">
-              <span class="material-icons icons">mail</span>
-              <div class="label">E-mail :</div>
-              <div class="value">guery.ira@gmail.com</div>
-            </div>
-            <div class="iconcont">
-              <span class="material-symbols-outlined icons">call</span>
-              <div class="label">Télephone :</div>
-              <!-- cacher JS -->
-              <div class="value tel">Afficher le numéro</div>
-            </div>
-            <div class="iconcont">
-              <span class="material-symbols-outlined icons">groups</span>
-              <div class="label">linkedin :</div>
-              <div class="value">
-                <a href="https://www.linkedin.com/in/irina-guery-plat/"
-                  >linkedin</a
-                >
+          <div class="box">
+            <div class="compet">
+              <h2>Contactez-moi</h2>
+              <div class="contact tocolumn wmob100">
+                    <div class="iconcont">
+                      <span class="material-icons icons">mail</span>
+                      <div class="label">E-mail :</div>
+                      <div class="value">guery.ira@gmail.com</div>
+                    </div>
+                    <div class="iconcont">
+                      <span class="material-symbols-outlined icons">call</span>
+                      <div class="label">Télephone :</div>
+                      <!-- cacher JS -->
+                      <div class="value tel">Afficher le numéro</div>
+                    </div>
+                    <div class="iconcont">
+                      <span class="material-symbols-outlined icons">groups</span>
+                      <div class="label">linkedin :</div>
+                      <div class="value">
+                        <a href="https://www.linkedin.com/in/irina-guery-plat/"
+                          >linkedin</a>
+                      </div>
+                    </div>
+                    <div class="iconcont">
+                        <span class="material-symbols-outlined icons">keep_public</span>
+                        <div class="label">GitHub :</div>
+                        <div class="value">
+                          <a href="https://github.com/Webira">GitHub</a>
+                        </div>
+                    </div>
               </div>
             </div>
-            <div class="iconcont">
-              <span class="material-symbols-outlined icons">keep_public</span>
-              <div class="label">GitHub :</div>
-              <div class="value">
-                <a href="https://github.com/Webira">GitHub</a>
-              </div>
-            </div>
-          </div>
-        </div>
+          </div> 
       </div>
     </section>
     <script src="script.js"></script>

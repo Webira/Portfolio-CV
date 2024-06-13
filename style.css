@@ -23,6 +23,7 @@ body {
   opacity: 25%;
 }
 .slider-content {
+  width: 90%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -36,7 +37,7 @@ h1 {
 h2 {
   color: white;
   font-size: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 h3 {
   color: white;
@@ -76,6 +77,7 @@ p {
 }
 .texte {
   display: flex;
+  padding: 20px;
 }
 .texte p {
   width: 60%;
@@ -91,7 +93,6 @@ p {
 .box h2 {
   text-align: center;
   padding-top: 20px;
-  
 }
 .flex {
   display: flex;
@@ -195,9 +196,9 @@ p {
   margin: 0px;
   aspect-ratio: 1/1; /*pour garder la forme de care, pas de dependance de taile de img*/
 }
-.projet{
+.projet {
   margin: 20px;
-  padding: 30px;
+  padding: 20px;
 }
 
 .inscription {
@@ -290,7 +291,7 @@ p {
 .tabcontent img {
   /*object-fit: cover;*/
   width: 700px;
-  height:500px;
+  height: 500px;
   margin: 0%;
 }
 /* -----fin de caroussele------*/
@@ -299,9 +300,9 @@ p {
 .contact {
   display: flex;
   margin: 20px;
+  justify-content: center;
 }
 .iconcont {
-  /*  ??? */
   display: block;
   width: 20%;
   gap: 20px;
@@ -330,7 +331,7 @@ p {
   cursor: pointer;
 }
 /* ------- header --------------*/
-header{
+header {
   position: fixed;
   top: 0;
   left: 0;
@@ -341,30 +342,29 @@ header{
   box-shadow: 1px 1px 25px white;
 }
 
-.header-menu{
+.header-menu {
   display: flex;
   align-items: center;
   list-style: none;
   padding-block: 10px;
   /*box-sizing: border-box;
   transition: 2s ease;*/
-  
 }
-.header-menu li a{
-text-decoration: none;
-display: block;
-padding: 10px 10px;
-
+.header-menu li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 10px;
 }
-.header-menu li a:hover{
-  background-color:rgb(111, 94, 162);;
+.header-menu li a:hover {
+  background-color: rgb(111, 94, 162);
 }
-.header-menu-mobil{
+.header-menu-mobil {
   display: none;
 }
-
-@media screen and (max-width: 810px) {
+/*@media screen and (max-width: 810px) {*/
+@media (max-width: 810px) {
   /*ici de nouveau style aparetre suite changement l'écrane*/
+
   #flex-responsive {
     flex-direction: column;
   }
@@ -372,41 +372,54 @@ padding: 10px 10px;
     margin-top: 20px;
     color: rgb(20, 20, 127);
     text-wrap: balance;
+    font-size: 2.5rem;
   }
-  .slider{
+  h2 {
+    margin-bottom: 30px;
+  }
+  .slider-resp {
     height: 50vh;
+    width: 100%;
   }
-  .header-menu-mobil{
+  .slider-content {
+    width: 90%;
+  }
+  .slaider-menu {
+    position: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: content;
+  }
+
+  .header-menu-mobil {
     display: block;
     margin-left: 70px;
     position: absolute;
     right: 10%;
     background-color: #ddd;
-    transform:translate(50%);
-    
+    transform: translate(50%);
   }
-  .header-menu{
+  .header-menu {
     position: fixed;
-    width:100%;
+    width: 100%;
     height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     display: none;
     background: rgb(57, 85, 133);
-    
   }
-  .active{
+  .active {
     display: flex;
   }
-  .tocolumn{
+  .tocolumn {
     flex-direction: column;
   }
-  .wmob100{ 
+  .wmob100 {
     width: 100% !important;
   }
-
-
-
-
+  .wmob90 {
+    width: 90% !important;
+  }
 }

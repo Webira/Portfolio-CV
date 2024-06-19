@@ -25,30 +25,30 @@
     <header>
       <div class="box">
         <div class="flex aligncenter space-between">
-          
-              <a href="/" class="header-logo">
-            <img src="images/logos/3190343.jpg" alt="logo" width="60"></a>
-            
-            <h2>Portfolio CV</h2>
+          <a href="/" class="header-logo">
+            <img src="images/logos/3190343.jpg" alt="logo" width="60"
+          /></a>
+
+          <h2>Portfolio CV</h2>
           <ul class="header-menu">
             <li><a href="/">Accueil</a></li>
             <li><a href="/">A propos</a></li>
-            <li><a href="/">Competences</a></li>
-            <li><a href="/">Réalisations</a></li>
-            <li><a href="/">Contactez-moi</a></li>
+            <li><a href="#compets">Competences</a></li>
+            <li><a href="#realisat">Réalisations</a></li>
+            <li><a href="#contactm">Contacts</a></li>
+            <li>
+              <a href="/index-p2.html" class="cv-dev">CV </a>
+            </li>
           </ul>
           <button onclick="openMenu()" class="header-menu-mobil">
             <!-- <span class="material-symbols-outlined"> -->
-            <span class="material-icons">
-              menu
-              </span>
+            <span class="material-icons"> menu </span>
           </button>
         </div>
-        
       </div>
     </header>
     <section id="flex-responsive">
-      <div class="slider slider-resp">
+      <div class="slider">
         <h1>Mon Portfolio</h1>
         <img
           src="images/futuristic-business-scene-with-ultra-modern-ambiance.jpg"
@@ -60,34 +60,43 @@
           <p>Développeuse WEB full-stack</p>
         </div>
       </div>
-      <div class="section">
-        <div class="box">
-          <div class="texte tocolumn">
-            <h2 class="wmob100">A propose de moi</h2>
-            <p class="wmob100">
-                Autonome, analyste, rigoureuse et curieuse, je fais preuve d'un solide sens
-              de l'organisation et l'adaptation. Mes expériences professionnelles m'ont
-              permis de renforcer mes acquis et d'appréhender les différents outils et
-              techniques de développement d'applications. Je souhaite participer dans
-              des projets innovants et évoluer auprès d'experts dans un environnement
-              dynamique. La préférence est pour le développement d'applications de
-              côté serveur - Backend. Je souhaite rejoindre une organisation à laquelle je
-              pourrais apporter mon dynamisme et mon véritable esprit d'équipe.
-            </p>
+      <div>
+        <div class="section" id="apropos">
+          <div class="box">
+            <div class="texte tocolumn wmob100">
+              <h2 class="wmob100">A propose de moi</h2>
+              <p class="wmob100">
+                Dotée d'autonomie, d' analyse, de rigueur et de curiosité, je
+                possède un solide sens de l'organisation et de l'adaptation. Mes
+                expériences professionnelles me servent de renforcer mes acquis
+                et d'appréhender les différents outils et techniques de
+                développement d'applications.
+              </p>
+              <p class="wmob100">
+                En 12/2023 j'ai validé mon Titre RNCP (niveau 6) "Concepteur
+                Développeur d'applications". Je souhaite participer dans des
+                projets innovants et évoluer auprès d'experts dans un
+                environnement dynamique. La préférence est pour le développement
+                d'applications de côté serveur - Backend. Je souhaite rejoindre
+                une organisation à laquelle je pourrais apporter mon dynamisme
+                et mon véritable esprit d'équipe.
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <div class="section marget">
         <div class="box">
           <div class="compet">
-            <h2>Mes competenses</h2>
+            <h2 id="compets">Mes competenses</h2>
             <div class="skills">
               <div class="flex gap tocolumn">
                 <!-- slider back-end -->
                 <div class="typeskill">
                   <h3>Back-end :</h3>
                   <p>
-                    C#, NodeJS, Java, Spring Boot, Maven, PHP, Symfony, Laravel
+                    C#, ASP.NET, NodeJS, Java, Spring Boot, Maven, PHP, Symfony,
+                    Laravel
                   </p>
                 </div>
                 <div class="slider1-container slider1-1">
@@ -150,9 +159,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- mes competenses 2 -->
-      <div class="section">
+
+        <!-- mes competenses 2  -->
         <div class="box">
           <div class="compet">
             <div class="skills">
@@ -160,7 +168,9 @@
                 <!-- BDD -->
                 <div class="typeskill">
                   <h3>Base de données, Bibliotheques :</h3>
-                  <p>SQL, MySQL, Hebernate, PhpMyAdmin; JQuery, Bootstrap</p>
+                  <div>
+                    <p>SQL, MySQL, Hebernate, PhpMyAdmin; JQuery, Bootstrap</p>
+                  </div>
                 </div>
                 <div class="slider1-container slider1-1">
                   <div class="slider1">
@@ -203,24 +213,26 @@
                   <div class="slider1">
                     <div class="blockimg 1">
                       <h3>Postman</h3>
-                      <img src="images/logos/postman.PNG" alt="postman"/>
+                      <img src="images/logos/postman.PNG" alt="postman" />
                     </div>
                     <div class="blockimg 2">
                       <h3>GitHub</h3>
-                      <img src="images/logos/github.PNG" alt="github"/>
+                      <img src="images/logos/github.PNG" alt="github" />
                     </div>
                     <div class="blockimg 3">
                       <h3>VSC</h3>
-                      <img src="images/logos/vsc.PNG" alt="VSC"/>
+                      <img src="images/logos/vsc.PNG" alt="VSC" />
                     </div>
                     <div class="blockimg 4">
                       <h3>Intellij IDEA</h3>
-                      <img src="images/logos/intellij_idea.PNG"
-                        alt="Intellij idea"/>
+                      <img
+                        src="images/logos/intellij_idea.PNG"
+                        alt="Intellij idea"
+                      />
                     </div>
                     <div class="blockimg 1">
                       <h3>Postman</h3>
-                      <img src="images/logos/postman.PNG" alt="postman"/>
+                      <img src="images/logos/postman.PNG" alt="postman" />
                     </div>
                   </div>
                 </div>
@@ -233,342 +245,572 @@
       <div class="section">
         <div class="box">
           <div class="compet tocolumn">
-            <h2>Mes réalisations</h2>
-            <div class="realisation wmob100 tocolumn">
+            <h2 id="realisat">Mes réalisations</h2>
+            <div class="realisation wmob100">
               <!-- wrap gap20" -->
-              <!-- projet 1  -->
-              <div class="inscription tocolumn">
-                <a href="#"><h3>« Professors management »</h3></a>
-                <img
-                  src="images/programming-background-collage.jpg"
-                  alt="proget_Professors-management"
-                />
+              <!------------ projet 1 ----------------- -->
+              <div class="projet">
+                <div class="inscription tocolumn">
+                  <a href="#"><h3>« Professors management »</h3></a>
+                  <img
+                    src="images/programming-background-collage.jpg"
+                    alt="proget_Professors-management"
+                  />
 
-                <div class="labelle wmob100">
-                  
-                    <p>Pour la période de stage dans la Société Kebtechs, j'ai realisé le projet d’utilisation interne pour l’administrateur
-                       : Tableau de la gestion des professeurs « Professors management » - une application de type Desktop.  
+                  <div class="labelle wmob100">
+                    <p>
+                      Pour la période de stage dans la Société Kebtechs, j'ai
+                      realisé le projet d’utilisation interne pour
+                      l’administrateur : Tableau de la gestion des professeurs «
+                      Professors management » - une application de type Desktop.
                     </p>
-                    <p>J’ai développé une API REST côté serveur avec le Framework Spring Boot pour Back-end avec MySQL pour la base de données,
-                       ainsi qu’une interface côté client pour afficher un résultat «visuel» fait avec REACT JS, en utilisant les langages : JAVA, HTML, JS, CSS </p>
-                    <p>Le but d’application Tableau « Professors-management » :</p>
-                    <p>•	Effectuer l'enregistrement des données statistique des Professors , pour l'analyse et la gestion simplifiée, avec installation sur l’ordinateur de l’administrateur.</p>
-                  
-                  <div>
-                    <a href="https://github.com/Webira/Professor_management_BE2"
-                      >Lien du projet : partie Back-end</a
-                    >
+                    <p>
+                      J’ai développé une API REST côté serveur avec le Framework
+                      Spring Boot pour Back-end avec MySQL pour la base de
+                      données, ainsi qu’une interface côté client pour afficher
+                      un résultat «visuel» fait avec REACT JS, en utilisant les
+                      langages : JAVA, HTML, JS, CSS
+                    </p>
+                    <p>
+                      Le but d’application Tableau « Professors-management » :
+                    </p>
+                    <p>
+                      • Effectuer l'enregistrement des données statistique des
+                      Professors , pour l'analyse et la gestion simplifiée, avec
+                      installation sur l’ordinateur de l’administrateur.
+                    </p>
+
+                    <div>
+                      <a
+                        href="https://github.com/Webira/Professor_management_BE2"
+                        >Lien du projet : partie Back-end</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/Webira/Professor_management_FE2"
+                        >Lien du projet : partie Front-end</a
+                      >
+                    </div>
                   </div>
-                  <div>
-                    <a href="https://github.com/Webira/Professor_management_FE2"
-                      >Lien du projet : partie Front-end</a
-                    >
-                  </div>
+                  <!-- labelle -->
                 </div>
-               
-              </div>
-              <div class="carousele">
-                <div class="tab tocolumn wmob100">
-                  <button
-                    class="tabgest" onclick="openCity(event,'TabGest')">
-                    Page Tableau de la gestion. Professor management
-                  </button>
-                  <button class="detail" onclick="openCity(event,'Detail')">
-                    Page Details sur le Professor
-                  </button>
-                  <button class="modiffier" onclick="openCity(event,'Modif')">
-                    Page Mettre à jour un Professor
-                  </button>
-                   <button class="enregist" onclick="openCity(event,'Enregist')">
-                    Page Enregistrer le Professor
-                  </button>
-                  <button class="diagrsec" onclick="openCity(event,'DiagrSec')">
-                    Page Diagramme de Secances. Gestion des Professors
-                  </button>
-                  <button class="classprof" onclick="openCity(event,'ClassProf')">
-                    Page Class Professor dans Sprint Boot
-                  </button>
-                  <button class="interface" onclick="openCity(event,'Interface')">
-                    Page Fichier d'interface
-                  </button>
-                  <button class="postmantest" onclick="openCity(event,'PostmanTest')">
-                    Page Test requete HTTP: POST Professor. Outil Postman
-                  </button>
-                </div>
+                <!-- inscription -->
 
-                <div id="TabGest" class="tabcontent">
-                    <img src="images/photosProf/TabGest.PNG" alt="projet_Manager-OpenSim"/>  
-                </div>
-                <div id="Detail" class="tabcontent">
-                    <img src="images/photosProf/Detail.PNG" alt="projet_Manager-OpenSim"/>  
-                </div>
-                <div id="Modif" class="tabcontent">
-                  <img src="images/photosProf/Modif.PNG" alt="projet_Manager-OpenSim"/>  
-                </div>
-                <div id="Enregist" class="tabcontent">
-                  <img src="images/photosProf/Enregist.PNG" alt="projet_Manager-OpenSim"/> 
-                </div>
-                <div id="DiagrSec" class="tabcontent">
-                  <img src="images/photosProf/Diagr.PNG" alt="projet_Manager-OpenSim" style="width: 500px;"/> 
-                </div>
-                <div id="ClassProf" class="tabcontent">
-                  <img src="images/photosProf/ClassProfBE.PNG" alt="projet_Manager-OpenSim"/> 
-                </div>
-                <div id="Interface" class="tabcontent">
-                  <img src="images/photosProf/InterfaceBE.PNG" alt="projet_Manager-OpenSim" style="width: 700px;"/> 
-                </div>
-                <div id="PostmanTest" class="tabcontent">
-                  <img src="images/photosProf/PostmanTest.PNG" alt="projet_Manager-OpenSim"/> 
-                </div>
-          </div>
-
-              <!-- projet 2 -->
-            <div class="projet">   
-              <div class="inscription tocolumn">
-                <a href="https://github.com/Webira/Blog_Laravel"
-                  ><h3>« Manager open Simulateur »</h3></a
-                >
-                <img
-                  src="images/programming-background-collage.jpg"
-                  alt="proget_OpenSimulator"
-                />
-
-                <div class="labelle wmob100">
-                    <p>Realisé pour l’Association MEZA le développement du projet « Manager open Simulateur » : authentification et
-                       autorisation des utilisateurs, gestion d’utilisateurs d’Open Simulateur.</p>
-                    <p> Les buts de l'application Web sont :</p>
-                    <p>•  D’effectuer l'enregistrement et l’authentification des Utilisateurs, selon les trois rôles prévus,
-                    pour les connecter en suite avec le Framework open simulator, qui rendre accessible au plus
-                    grand nombre l'environnement de réalité virtuelle.</p>
-                    <p>•  Développer un Blog, pour garder des contacts interactifs avec les utilisateurs et pour
-                    améliorer le positionnement l’application sur les pages de résultats de recherche (SEO).</p>
-                    <p>•  De simplifier le processus de la transmission de données statistiques à l’administration de
-                    l’association qui les analyse et utilise pour la gestion utilisateurs.</p>
-                    <p>En résumé : </p>
-                    <p>Pour concevoir et développer une application en PHP avec Architecture MVC et
-                      des modèles de conception : Le Factory Pattern et La chaîne de responsabilité,
-                      j’ai travaillé en mode Agile (SCRUM) depuis l’analyse de l’expression des besoins clients jusqu’au
-                      développement d’une solution logicielle de gestion des utilisateurs basée sur une architecture
-                      N-Tiers, implémentée en langage PHP. Pour ce faire, je vais concevoir une base de données
-                      relationnelle pour stocker les informations (utilisateurs, contenus spécifiques), et une API REST pour
-                      la gestion.</p>
-                    <p>Pour développer la partie Front-end et la partie Back-end d’application, en intégrant les
-                        recommandations de sécurité, j’ai utilisé les langages : HTML, JS, PHP, CSS ainsi que
-                        Framework Laravel 8 et Bootstrap 5, Base de données MySQL</p>
-                  
-                <a href="https://github.com/Webira/Blog_Laravel"
-                    >Lien du projet : Back-end et Front-end</a>
-                </div>
-                
-              </div>
-              <div class="carousele">
-                <div class="tab tocolumn wmob100">
-                  <button class="tablinks" onclick="openCity(event,'accueil')">
-                    Pages Accueil
-                  </button>
-                  <button class="tablinks" onclick="openCity(event,'Articl')">
-                    Pages d'un Post
-                  </button>
-                  <button class="tablinks" onclick="openCity(event,'FormLog')">
-                    Page Formulaire de Login
-                  </button>
-                  <button class="tablinks" onclick="openCity(event,'FormUser')">
-                    Page Formulaire d'Utilisateur
-                  </button>
-                   <button class="tablinks" onclick="openCity(event,'TabUsers')">
-                    Page Tableau de la gestion des utilisateurs
-                  </button>
-                  <button class="tablinks" onclick="openCity(event,'TabContact')">
-                    Page Espace d'un Utilisateur
-                  </button>
-                  <button class="tablinks" onclick="openCity(event,'DiagrSeq')">
-                    Page UML Diagramme de séquences
-                  </button>
-                  <button class="tablinks" onclick="openCity(event,'BddPost')">
-                    Page Base de données.Table Post
-                  </button>
-                  <button class="tablinks" onclick="openCity(event,'DiagrClass')">
-                    Page UML Diagramme de classes
-                  </button>
-                  <button class="tablinks" onclick="openCity(event,'DiagrMpd')">
-                    Page UML Diagramme de MPD
-                  </button>
-                  <button class="tablinks" onclick="openCity(event,'DiagrPack')">
-                    Page UML Diagramme de Packages
-                  </button>
-                  <button class="tablinks" onclick="openCity(event,'responsifs')">
-                    Pages responsifs
-                  </button>
-                  <button class="tablinks" onclick="openCity(event,'contact')">
-                    Pages Contact
-                  </button>
-                  
-                </div>
-
-                <div id="accueil" class="tabcontent">
-                  <img src="images/photosMeza/Accueil.PNG" alt="projet_Manager-OpenSim"/> 
-                </div>
-                <div id="Articl" class="tabcontent">
-                    <img src="images/photosMeza/Articl.PNG" alt="projet_Manager-OpenSim"/>  
-                </div>
-                <div id="FormLog" class="tabcontent">
-                    <img src="images/photosMeza/FormLog.PNG" alt="projet_Manager-OpenSim"/>  
-                </div>
-                <div id="FormUser" class="tabcontent">
-                  <img src="images/photosMeza/FormUser.PNG" alt="projet_Manager-OpenSim"/>  
-                </div>
-                <div id="TabUsers" class="tabcontent">
-                  <img src="images/photosMeza/TabUsers.PNG" alt="projet_Manager-OpenSim"/> 
-                </div>
-                <div id="TabContact" class="tabcontent">
-                  <img src="images/photosMeza/GestionContact.PNG" alt="projet_Manager-OpenSim"/> 
-                </div>
-                <div id="DiagrSeq" class="tabcontent">
-                  <img src="images/photosMeza/Diagr.PNG" alt="projet_Manager-OpenSim"/> 
-                </div>
-                <div id="BddPost" class="tabcontent">
-                  <img src="images/photosMeza/BddPost.PNG" alt="projet_Manager-OpenSim"/> 
-                </div>
-                <div id="DiagrClass" class="tabcontent">
-                  <img src="images/photosMeza/DiagrClass.PNG" alt="projet_Manager-OpenSim"/> 
-                </div>
-                <div id="DiagrMpd" class="tabcontent">
-                  <img src="images/photosMeza/DiagrMPD.PNG" alt="projet_Manager-OpenSim"/> 
-                </div>
-                <div id="DiagrPack" class="tabcontent">
-                  <img src="images/photosMeza/DiagrPack.PNG" alt="projet_Manager-OpenSim"/> 
-                </div>
-                <div id="responsifs" class="tabcontent">
-                  <img src="images/photosMeza/Responseve.PNG" alt="projet_Manager-OpenSim"/> 
-                </div>
-                <div id="contact" class="tabcontent">
-                  <img src="images/photosMeza/Contact.PNG" alt="projet_Manager-OpenSim"/> 
-                </div>
-                
-              </div>   
-          </div>
-
-              <!-- projet 3  -->
-            <div class="projet">
-              <div class="inscription tocolumn">
-                  <a href="#"><h3>« Plateforme d'inscription »</h3>
-                  </a>
-                <img
-                  src="images/programming-background-collage.jpg"
-                  alt="proget_Ecole"
-                />
-
-                <div class="labelle wmob100">
-                      <p>Le développement du projet "Plateforme d'inscription en ligne" pour une
-                      école privée - l'Association « En mode bilingue ».
-                      J’ai travaillé en mode Agile (SCRUM) depuis l’analyse de l’expression des besoins clients jusqu’au développement d’un solution logicielle : d’inscription d’élevés à l’école et d’une gestion.</p>
-                      <p>Développement la partie front-end et la partie back-end d’application WEB, en intégrant les recommandations de sécurité, a effectué avec:
-                      HTML, JS, PHP, CSS ainsi que Frameworks Symfony et Bootstrap, Base de données MySQL et la libraire JQuery.</p>
-                      <p>Les buts de l'application « Plateforme d'inscription » sont :</p>
-                      <p>•	D’effectuer l'inscription des élèves aux ateliers créatifs par internet, en ligne. Pour simplifier le processus administratif pour les parents des élèves ;</p>
-                      <p>•	De simplifier le processus de la transmission de données statistiques à l’administration de l’association qui les analyse et utilise pour la gestion. 
-                      Les tableaux administratifs responsifs.</p>
-                
-                  <a href="https://github.com/Webira/Projet-Ecole-bilingue"
-                    >Lien du projet : Front-end et Back-end</a
-                  >
-                </div>
-                                  
-              </div>
-
-              <!--carousele--->
-                <div class="carousele">
-                  <div class="tab tocolumn wmob100">
+                <div class="carousele tocolumn">
+                  <div class="tab wmob100">
+                    <button class="tabgest" onclick="openCity(event,'TabGest')">
+                      Page Tableau de la gestion. Professor management
+                    </button>
+                    <button class="detail" onclick="openCity(event,'Detail')">
+                      Page Details sur le Professor
+                    </button>
+                    <button class="modiffier" onclick="openCity(event,'Modif')">
+                      Page Mettre à jour un Professor
+                    </button>
                     <button
-                      class="tablinks" onclick="openCity(event,'accueil')">
+                      class="enregist"
+                      onclick="openCity(event,'Enregist')"
+                    >
+                      Page Enregistrer le Professor
+                    </button>
+                    <button
+                      class="diagrsec"
+                      onclick="openCity(event,'DiagrSec')"
+                    >
+                      Page Diagramme de Secances. Gestion des Professors
+                    </button>
+                    <button
+                      class="classprof"
+                      onclick="openCity(event,'ClassProf')"
+                    >
+                      Page Class Professor dans Sprint Boot
+                    </button>
+                    <button
+                      class="interface"
+                      onclick="openCity(event,'Interface')"
+                    >
+                      Page Fichier d'interface
+                    </button>
+                    <button
+                      class="postmantest"
+                      onclick="openCity(event,'PostmanTest')"
+                    >
+                      Page Test requete HTTP: POST Professor. Outil Postman
+                    </button>
+                  </div>
+                  <div class="imgresponsif wmob100">
+                    <div id="TabGest" class="tabcontent">
+                      <img
+                        src="images/photosProf/TabGest.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                    <div id="Detail" class="tabcontent">
+                      <img
+                        src="images/photosProf/Detail.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                    <div id="Modif" class="tabcontent">
+                      <img
+                        src="images/photosProf/Modif.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                    <div id="Enregist" class="tabcontent">
+                      <img
+                        src="images/photosProf/Enregist.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                    <div id="DiagrSec" class="tabcontent">
+                      <img
+                        src="images/photosProf/Diagr.PNG"
+                        alt="projet_Plateform d'inscription"
+                        style="width: 500px"
+                      />
+                    </div>
+                    <div id="ClassProf" class="tabcontent">
+                      <img
+                        src="images/photosProf/ClassProfBE.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                    <div id="Interface" class="tabcontent">
+                      <img
+                        src="images/photosProf/InterfaceBE.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                    <div id="PostmanTest" class="tabcontent">
+                      <img
+                        src="images/photosProf/PostmanTest.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- carousel -->
+              </div>
+              <!--fin  projet1 -->
+              <!-- ------------------projet 2---------------- -->
+              <div class="projet">
+                <div class="inscription tocolumn">
+                  <a href="https://github.com/Webira/Blog_Laravel"
+                    ><h3>« Manager open Simulateur »</h3></a
+                  >
+                  <img
+                    src="images/programming-background-collage.jpg"
+                    alt="proget_OpenSimulator"
+                  />
+
+                  <div class="labelle wmob100">
+                    <p>
+                      Realisé pour l’Association MEZA le développement du projet
+                      « Manager open Simulateur » : authentification et
+                      autorisation des utilisateurs, gestion d’utilisateurs
+                      d’Open Simulateur.
+                    </p>
+                    <p>Les buts de l'application Web sont :</p>
+                    <p>
+                      • D’effectuer l'enregistrement et l’authentification des
+                      Utilisateurs, selon les trois rôles prévus, pour les
+                      connecter en suite avec le Framework open simulator, qui
+                      rendre accessible au plus grand nombre l'environnement de
+                      réalité virtuelle.
+                    </p>
+                    <p>
+                      • Développer un Blog, pour garder des contacts interactifs
+                      avec les utilisateurs et pour améliorer le positionnement
+                      l’application sur les pages de résultats de recherche
+                      (SEO).
+                    </p>
+                    <p>
+                      • De simplifier le processus de la transmission de données
+                      statistiques à l’administration de l’association qui les
+                      analyse et utilise pour la gestion utilisateurs.
+                    </p>
+                    <p>En résumé :</p>
+                    <p>
+                      Pour concevoir et développer une application en PHP avec
+                      Architecture MVC et des modèles de conception : Le Factory
+                      Pattern et La chaîne de responsabilité, j’ai travaillé en
+                      mode Agile (SCRUM) depuis l’analyse de l’expression des
+                      besoins clients jusqu’au développement d’une solution
+                      logicielle de gestion des utilisateurs basée sur une
+                      architecture N-Tiers, implémentée en langage PHP. Pour ce
+                      faire, je vais concevoir une base de données relationnelle
+                      pour stocker les informations (utilisateurs, contenus
+                      spécifiques), et une API REST pour la gestion.
+                    </p>
+                    <p>
+                      Pour développer la partie Front-end et la partie Back-end
+                      d’application, en intégrant les recommandations de
+                      sécurité, j’ai utilisé les langages : HTML, JS, PHP, CSS
+                      ainsi que Framework Laravel 8 et Bootstrap 5, Base de
+                      données MySQL
+                    </p>
+
+                    <a href="https://github.com/Webira/Blog_Laravel"
+                      >Lien du projet : Back-end et Front-end</a
+                    >
+                  </div>
+                </div>
+
+                <div class="carousele tocolumn">
+                  <div class="tab wmob100">
+                    <button
+                      class="tablinks"
+                      onclick="openCity(event,'accueil')"
+                    >
                       Page Accueil
                     </button>
-                    <button class="tablinks" onclick="openCity(event,'Activites')">
+                    <button class="tablinks" onclick="openCity(event,'Articl')">
+                      Page d'un Post
+                    </button>
+                    <button
+                      class="tablinks"
+                      onclick="openCity(event,'FormLog')"
+                    >
+                      Page Formulaire de Login
+                    </button>
+                    <button
+                      class="tablinks"
+                      onclick="openCity(event,'FormUser')"
+                    >
+                      Page Formulaire d'Utilisateur
+                    </button>
+                    <button
+                      class="tablinks"
+                      onclick="openCity(event,'TabUsers')"
+                    >
+                      Page Tableau de la gestion des utilisateurs
+                    </button>
+                    <button
+                      class="tablinks"
+                      onclick="openCity(event,'TabContact')"
+                    >
+                      Page Espace d'un Utilisateur
+                    </button>
+                    <button
+                      class="tablinks"
+                      onclick="openCity(event,'DiagrSeq')"
+                    >
+                      Page UML Diagramme de séquences
+                    </button>
+                    <button
+                      class="tablinks"
+                      onclick="openCity(event,'BddPost')"
+                    >
+                      Page Base de données.Table Post
+                    </button>
+                    <button
+                      class="tablinks"
+                      onclick="openCity(event,'DiagrClass')"
+                    >
+                      Page UML Diagramme de classes
+                    </button>
+                    <button
+                      class="tablinks"
+                      onclick="openCity(event,'DiagrMpd')"
+                    >
+                      Page UML Diagramme de MPD
+                    </button>
+                    <button
+                      class="tablinks"
+                      onclick="openCity(event,'DiagrPack')"
+                    >
+                      Page UML Diagramme de Packages
+                    </button>
+                    <button
+                      class="tablinks"
+                      onclick="openCity(event,'responsifs')"
+                    >
+                      Pages responsifs
+                    </button>
+                    <button
+                      class="tablinks"
+                      onclick="openCity(event,'contact')"
+                    >
+                      Page Contact
+                    </button>
+                  </div>
+                  <div class="imgresponsif">
+                    <div id="accueil" class="tabcontent">
+                      <img
+                        src="images/photosMeza/Accueil.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                    <div id="Articl" class="tabcontent">
+                      <img
+                        src="images/photosMeza/Articl.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                    <div id="FormLog" class="tabcontent">
+                      <img
+                        src="images/photosMeza/FormLog.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                    <div id="FormUser" class="tabcontent">
+                      <img
+                        src="images/photosMeza/FormUser.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                    <div id="TabUsers" class="tabcontent">
+                      <img
+                        src="images/photosMeza/TabUsers.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                    <div id="TabContact" class="tabcontent">
+                      <img
+                        src="images/photosMeza/GestionContact.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                    <div id="DiagrSeq" class="tabcontent">
+                      <img
+                        src="images/photosMeza/Diagr.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                    <div id="BddPost" class="tabcontent">
+                      <img
+                        src="images/photosMeza/BddPost.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                    <div id="DiagrClass" class="tabcontent">
+                      <img
+                        src="images/photosMeza/DiagrClass.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                    <div id="DiagrMpd" class="tabcontent">
+                      <img
+                        src="images/photosMeza/DiagrMPD.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                    <div id="DiagrPack" class="tabcontent">
+                      <img
+                        src="images/photosMeza/DiagrPack.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                    <div id="responsifs" class="tabcontent">
+                      <img
+                        src="images/photosMeza/Responseve.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                    <div id="contact" class="tabcontent">
+                      <img
+                        src="images/photosMeza/Contact.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- carousel -->
+              </div>
+              <!--fin  projet2 -->
+
+              <!-------------------- projet 3  ------------------>
+              <div class="projet">
+                <div class="inscription tocolumn">
+                  <a href="#"><h3>« Plateforme d'inscription »</h3> </a>
+                  <img
+                    src="images/programming-background-collage.jpg"
+                    alt="proget_Ecole"
+                  />
+
+                  <div class="labelle wmob100">
+                    <p>
+                      Le développement du projet "Plateforme d'inscription en
+                      ligne" pour une école privée - l'Association « En mode
+                      bilingue ». J’ai travaillé en mode Agile (SCRUM) depuis
+                      l’analyse de l’expression des besoins clients jusqu’au
+                      développement d’un solution logicielle : d’inscription
+                      d’élevés à l’école et d’une gestion.
+                    </p>
+                    <p>
+                      Développement la partie front-end et la partie back-end
+                      d’application WEB, en intégrant les recommandations de
+                      sécurité, a effectué avec: HTML, JS, PHP, CSS ainsi que
+                      Frameworks Symfony et Bootstrap, Base de données MySQL et
+                      la libraire JQuery.
+                    </p>
+                    <p>
+                      Les buts de l'application « Plateforme d'inscription »
+                      sont :
+                    </p>
+                    <p>
+                      • D’effectuer l'inscription des élèves aux ateliers
+                      créatifs par internet, en ligne. Pour simplifier le
+                      processus administratif pour les parents des élèves ;
+                    </p>
+                    <p>
+                      • De simplifier le processus de la transmission de données
+                      statistiques à l’administration de l’association qui les
+                      analyse et utilise pour la gestion. Les tableaux
+                      administratifs responsifs.
+                    </p>
+
+                    <a href="https://github.com/Webira/Projet-Ecole-bilingue"
+                      >Lien du projet : Front-end et Back-end</a
+                    >
+                  </div>
+                </div>
+
+                <!--carousele--->
+                <div class="carousele tocolumn">
+                  <div class="tab wmob100">
+                    <button
+                      class="tablinks"
+                      onclick="openCity(event,'Accueil')"
+                    >
+                      Page Accueil
+                    </button>
+                    <button
+                      class="tablinks"
+                      onclick="openCity(event,'Activites')"
+                    >
                       Page Nos Activités
                     </button>
-                    <button class="tablinks" onclick="openCity(event,'Ateliers')">
+                    <button
+                      class="tablinks"
+                      onclick="openCity(event,'Ateliers')"
+                    >
                       Page Ateliers créatifs
                     </button>
-                     <button class="tablinks" onclick="openCity(event,'Carte')">
+                    <button class="tablinks" onclick="openCity(event,'Carte')">
                       Page Carte d'atelier
                     </button>
-                    <button class="tablinks" onclick="openCity(event,'EspaceUser')">
+                    <button
+                      class="tablinks"
+                      onclick="openCity(event,'EspaceUser')"
+                    >
                       Page Espace d'un Utilisateur
                     </button>
                     <button class="tablinks" onclick="openCity(event,'Form')">
                       Page Formulaire d'ajouter un élève
                     </button>
-                    <button class="tablinks" onclick="openCity(event,'TabProf')">
+                    <button
+                      class="tablinks"
+                      onclick="openCity(event,'TabProf')"
+                    >
                       Page Tableau de gestion des élèves
                     </button>
-                    <button class="tablinks" onclick="openCity(event,'Contact')">
+                    <button
+                      class="tablinks"
+                      onclick="openCity(event,'Contact')"
+                    >
                       Page Contacter nous
                     </button>
                   </div>
-
-                  <div id="accueil" class="tabcontent">
-                      <img src="images/photosEcole/Acc.PNG" alt="projet_Manager-OpenSim"/>  
+                  <div class="imgresponsif">
+                    <div id="Accueil" class="tabcontent">
+                      <img
+                        src="images/photosEcole/Acc.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                    <div id="Activites" class="tabcontent">
+                      <img
+                        src="images/photosEcole/About.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                    <div id="Ateliers" class="tabcontent">
+                      <img
+                        src="images/photosEcole/Ateliers.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                    <div id="Carte" class="tabcontent">
+                      <img
+                        src="images/photosEcole/Carte.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                    <div id="EspaceUser" class="tabcontent">
+                      <img
+                        src="images/photosEcole/EspaceUser.PNG"
+                        alt="projet_Plateform d'inscription"
+                        style="width: 500px"
+                      />
+                    </div>
+                    <div id="Form" class="tabcontent">
+                      <img
+                        src="images/photosEcole/Form.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
+                    <div id="TabProf" class="tabcontent">
+                      <img
+                        src="images/photosEcole/TabProf.PNG"
+                        alt="projet_Plateform d'inscription"
+                        style="width: 700px"
+                      />
+                    </div>
+                    <div id="Contact" class="tabcontent">
+                      <img
+                        src="images/photosEcole/Contact.PNG"
+                        alt="projet_Plateform d'inscription"
+                      />
+                    </div>
                   </div>
-                  <div id="Activites" class="tabcontent">
-                      <img src="images/photosEcole/About.PNG" alt="projet_Manager-OpenSim"/>  
-                  </div>
-                  <div id="Ateliers" class="tabcontent">
-                    <img src="images/photosEcole/Ateliers.PNG" alt="projet_Manager-OpenSim"/>  
-                  </div>
-                  <div id="Carte" class="tabcontent">
-                    <img src="images/photosEcole/Carte.PNG" alt="projet_Manager-OpenSim"/> 
-                  </div>
-                  <div id="EspaceUser" class="tabcontent">
-                    <img src="images/photosEcole/EspaceUser.PNG" alt="projet_Manager-OpenSim" style="width: 500px;"/> 
-                  </div>
-                  <div id="Form" class="tabcontent">
-                    <img src="images/photosEcole/Form.PNG" alt="projet_Manager-OpenSim"/> 
-                  </div>
-                  <div id="TabProf" class="tabcontent">
-                    <img src="images/photosEcole/TabProf.PNG" alt="projet_Manager-OpenSim" style="width: 700px;"/> 
-                  </div>
-                  <div id="Contact" class="tabcontent">
-                    <img src="images/photosEcole/Contact.PNG" alt="projet_Manager-OpenSim"/> 
-                  </div>
+                </div>
+                <!-- carousel -->
+              </div>
+              <!-- projet 3 -->
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <!-- fin section -->
+      <!-- ------------------------------- -->
       <div class="section marget">
-          <div class="box">
-            <div class="compet">
-              <h2>Contactez-moi</h2>
-              <div class="contact tocolumn">
-                    <div class="iconcont wmob90">
-                      <span class="material-icons icons">mail</span>
-                      <div class="label">E-mail :</div>
-                      <div class="value">guery.ira@gmail.com</div>
-                    </div>
-                    <div class="iconcont wmob90">
-                      <span class="material-symbols-outlined icons">call</span>
-                      <div class="label">Télephone :</div>
-                      <!-- cacher JS -->
-                      <div class="value tel">Afficher le numéro</div>
-                    </div>
-                    <div class="iconcont wmob90">
-                      <span class="material-symbols-outlined icons">groups</span>
-                      <div class="label">linkedin :</div>
-                      <div class="value">
-                        <a href="https://www.linkedin.com/in/irina-guery-plat/"
-                          >linkedin</a>
-                      </div>
-                    </div>
-                    <div class="iconcont wmob90">
-                        <span class="material-symbols-outlined icons">keep_public</span>
-                        <div class="label">GitHub :</div>
-                        <div class="value">
-                          <a href="https://github.com/Webira">GitHub</a>
-                        </div>
-                    </div>
+        <div class="box">
+          <div class="compet">
+            <h2 id="contactm">Contactez-moi</h2>
+            <div class="contact tocolumn">
+              <div class="iconcont wmob90">
+                <span class="material-icons icons">mail</span>
+                <div class="label">E-mail :</div>
+                <div class="value">guery.ira@gmail.com</div>
+              </div>
+              <div class="iconcont wmob90">
+                <span class="material-symbols-outlined icons">call</span>
+                <div class="label">Télephone :</div>
+                <!-- cacher JS -->
+                <div class="value tel">Afficher le numéro</div>
+              </div>
+              <div class="iconcont wmob90">
+                <span class="material-symbols-outlined icons">groups</span>
+                <div class="label">linkedin :</div>
+                <div class="value">
+                  <a href="https://www.linkedin.com/in/irina-guery-plat/"
+                    >linkedin</a
+                  >
+                </div>
+              </div>
+              <div class="iconcont wmob90">
+                <span class="material-symbols-outlined icons">keep_public</span>
+                <div class="label">GitHub :</div>
+                <div class="value">
+                  <a href="https://github.com/Webira">GitHub</a>
+                </div>
               </div>
             </div>
-          </div> 
+          </div>
+        </div>
       </div>
     </section>
     <script src="script.js"></script>

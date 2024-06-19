@@ -10,11 +10,13 @@ const openMenu = () => {
   if (menu.classList.contains("active")) {
     document.querySelector("header.material-symbols-outlined").innerHTML =
       "close";
-  } //?????
+  } 
   else {
     document.querySelector("header.material-icons").innerHTML = "menu";
   }
 };
+/*-------------------------CV------------------------*/
+
 
 /* ----------caroussele--------*/
 function openCity(evt, imgName) {
@@ -40,7 +42,7 @@ function openCity(evt, imgName) {
 }
 /*-------------- fin caroussele-------------*/
 
-/*--------------coordener----------------*/
+/*--------------coordoner----------------*/
 
 const telAffich = document.querySelector(".tel");
 

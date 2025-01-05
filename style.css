@@ -218,7 +218,7 @@ p {
 }
 .inscription h3 {
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 5%;
   transform: translate(-20%, -10%);
   margin: 20px;

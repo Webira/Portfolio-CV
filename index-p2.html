@@ -31,6 +31,9 @@
                 <li><a href="/">Accueil</a></li>
               <!--  <li><a href="/index-p2.html">CV Développer full-stack </a></li>-->
               </ul>
+              <div class="pdf">
+                <button onclick="imprimerPDF()">Imprimer le PDF</button>
+              </div>
          
         </header> 
         <div class="section">
@@ -40,18 +43,20 @@
                 <div class="realisation wmob100">
                   
                   <div class="projet">
-                      <div class="cv-dev"><img src="images/cv/cv_dév_p1_page-0001.jpg"
+                     <!-- <div class="cv-dev"><img src="images/cv/cv_dév_p1_page-0001.jpg"
                         alt="cv"
                         width="1000"
                       /></div>
                       <div class="cv-dev"><img src="images/cv/cv_dév_p2_page-0002.jpg"
                         alt="cv" width="1000"
-                      /></div>
-
+                      /></div>-->
+                      <iframe id="pdfFrame" src="images/cv/CV_Irina Guery_DévAppWeb.pdf" width="1200" height="1200"></iframe>
+                                         
                   </div>
                 </div>
             </div>
           </div>
         </div>
+        <script src="script.js"></script>      
   </body>
 </html>

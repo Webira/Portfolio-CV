@@ -16,6 +16,13 @@ const openMenu = () => {
   }
 };
 /*-------------------------CV------------------------*/
+//<script>
+function imprimerPDF() {
+    var iframe = document.getElementById('pdfFrame').contentWindow;
+    iframe.focus();
+    iframe.print();
+}
+//</script>
 
 
 /* ----------caroussele--------*/
